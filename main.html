@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<header style="background-color: #101820;text-align: end; color: white; padding-right: 30px;">
+    @copyright by SBR_7
+</header>
+<body>
+    <div class="area">
+        <h1 style="color: azure;">Animals That I Have Seen In Real Life</h1>
+        <div class="holder">
+            <div class="content-holder">
+                <div class="name">
+                    <label for="txt"> Enter name:</label>
+                    <input type="text" id="txt" placeholder="Enter the animal Name.....">
+                </div>
+                <div class="name">
+                    <label for="txt1"> Enter Url : </label>
+                    <input type="text" id="txt1" placeholder="Enter the Photo url.....">
+                </div>
+                <div class="search-add" style="display:flex;">
+                    <label for="search">Search name:</label>
+                    <input type="text" id="search" placeholder="Enter the name...." value="">
+                    <button onclick="searchAnimal()">Search</button>
+                    <button onclick="addAnimal()">Add</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Options</th>
+                    </thead>
+                    <tbody class="display" id="display">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="popup" style="display:none; position:fixed; top:0; left:5%; background:white; padding:20px; border:2px solid black; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-align:center; z-index:999;">
+    <p id="popup-name" style="font-size:18px; font-weight:bold;"></p>
+    <img id="popup-img" src="" alt="" style="max-width:200px; height:auto;">
+    <br><br>
+    <button onclick="closePopup()" style="padding:5px 10px; cursor:pointer;">Close</button>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
